@@ -169,7 +169,7 @@
 				TargetAttributes = {
 					B0F37BBC1E361EAD00179E85 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 854G7LGZ42;
+						DevelopmentTeam = RUMWXF5QY3;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -357,7 +357,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 854G7LGZ42;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RUMWXF5QY3;
 				INFOPLIST_FILE = extra_recipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -370,7 +371,7 @@
 					"-pagezero_size",
 					0x16000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.extra-recipe";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creaturecoding.extra-recipe-dark";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "extra_recipe/extra_recipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -383,7 +384,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 854G7LGZ42;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RUMWXF5QY3;
 				INFOPLIST_FILE = extra_recipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -396,7 +398,7 @@
 					"-pagezero_size",
 					0x16000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.extra-recipe";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creaturecoding.extra-recipe-dark";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "extra_recipe/extra_recipe-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
