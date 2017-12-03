@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0E5165B1E39459300CE4C47 /* README in Resources */ = {isa = PBXBuildFile; fileRef = B0E5165A1E39459300CE4C47 /* README */; };
 		B0F37BC11E361EAE00179E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F37BC01E361EAE00179E85 /* AppDelegate.swift */; };
 		B0F37BC31E361EAE00179E85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F37BC21E361EAE00179E85 /* ViewController.swift */; };
 		B0F37BC61E361EAE00179E85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F37BC41E361EAE00179E85 /* Main.storyboard */; };
@@ -28,6 +27,8 @@
 		B3DDE7951ED72CBA0003660B /* dropbear.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3DDE7941ED72CBA0003660B /* dropbear.plist */; };
 		B3DDE7971ED72CC20003660B /* reload in Resources */ = {isa = PBXBuildFile; fileRef = B3DDE7961ED72CC20003660B /* reload */; };
 		B3DE70BB1EDAD6280053D5BA /* offsets.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DE70B91EDAD6280053D5BA /* offsets.m */; };
+		B878DE691FD47A0B00C23B20 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B878DE681FD47A0B00C23B20 /* README.md */; };
+		B878DE6A1FD47A1E00C23B20 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B878DE681FD47A0B00C23B20 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,7 +46,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B0E5165A1E39459300CE4C47 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		B0F37BBD1E361EAE00179E85 /* extra_recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = extra_recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F37BC01E361EAE00179E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F37BC21E361EAE00179E85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +73,7 @@
 		B3DDE7961ED72CC20003660B /* reload */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = reload; sourceTree = "<group>"; };
 		B3DE70B91EDAD6280053D5BA /* offsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = offsets.m; sourceTree = "<group>"; };
 		B3DE70BA1EDAD6280053D5BA /* offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offsets.h; sourceTree = "<group>"; };
+		B878DE681FD47A0B00C23B20 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +130,7 @@
 				B39A22181ECBB89D00F0EE23 /* unjail.h */,
 				B0F37BDD1E37AC0700179E85 /* load_regs_and_crash.s */,
 				B0F37BD21E361FCC00179E85 /* extra_recipe-Bridging-Header.h */,
-				B0E5165A1E39459300CE4C47 /* README */,
+				B878DE681FD47A0B00C23B20 /* README.md */,
 				B3DE70B91EDAD6280053D5BA /* offsets.m */,
 				B3DE70BA1EDAD6280053D5BA /* offsets.h */,
 			);
@@ -198,8 +199,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B878DE6A1FD47A1E00C23B20 /* README.md in Resources */,
 				B337975F1ED35C6200FC0BEB /* launchctl in Resources */,
-				B0E5165B1E39459300CE4C47 /* README in Resources */,
 				B3CEC24F1ECE1ADD00508B1A /* def.plist in Resources */,
 				B0F37BCB1E361EAE00179E85 /* LaunchScreen.storyboard in Resources */,
 				B3DDE7931ED72CAE0003660B /* 0.reload.plist in Resources */,
@@ -226,6 +227,7 @@
 				B0F37BC31E361EAE00179E85 /* ViewController.swift in Sources */,
 				B0F37BC11E361EAE00179E85 /* AppDelegate.swift in Sources */,
 				B3DE70BB1EDAD6280053D5BA /* offsets.m in Sources */,
+				B878DE691FD47A0B00C23B20 /* README.md in Sources */,
 				B39A22191ECBB89D00F0EE23 /* unjail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

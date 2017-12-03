@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var bangButton: UIButton!
     var seconds:Int = 30
     var timer = Timer()
+    var fireOnCompletion = false
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -23,6 +24,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         bangButton.isEnabled = false
         bangButton.alpha = 0.6
+        runTimer()
+    }
+    
+    func autoRunAfterSeconds(autoRunSeconds:Int, withAlert:Bool? = true) {
+        if (withAlert)! {
+            let alertController = UIAlertController(title: "Auto Run Warning", message: "Automatically attemptiong to jailbreak in \(String(autoRunSeconds)) seconds!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        timer.invalidate()
+        seconds = autoRunSeconds
+        fireOnCompletion = true
         runTimer()
     }
 
@@ -38,15 +53,27 @@ class ViewController: UIViewController {
             bangButton.isEnabled = true
             bangButton.alpha = 1
             timerLabel.text = "ready!"
+            if (fireOnCompletion) {
+                attempt()
+            }
         } else {
             timerLabel.text = "stand by: \(seconds)s"
         }
     }
     
     func attempt() {
+        OperationQueue().addOperation {
+            let statusResult = jb_go()
+            OperationQueue.main.addOperation {
+                self.updateStatus(statusResult: Int(statusResult))
+            }
+        }
+    }
+    
+    func updateStatus(statusResult:Int) {
         var status: String
         
-        switch jb_go() {
+        switch statusResult {
         case 0:
             status = " jailbroken "
         case 1:
